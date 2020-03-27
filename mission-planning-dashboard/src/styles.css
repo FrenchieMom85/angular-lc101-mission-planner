@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url(https://wallpapersite.com/images/wallpapers/earth-3840x2160-stars-hd-5k-3468.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

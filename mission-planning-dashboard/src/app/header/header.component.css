@@ -1,0 +1,16 @@
+h1 {
+    background-color: midnightblue;
+    color: oldlace;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    font-size: 75px;
+}
+
+.box {
+    text-align: center;
+    border: oldlace;
+    border-style: double;
+    font-size: larger;
+    background-color: slategray;
+}

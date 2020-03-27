@@ -1,4 +1,11 @@
+
+
 .box {
     display: flex;
     padding: 10px;
+    float: inherit;
+    border: slategray;
+    color: oldlace;
  }
+
+
