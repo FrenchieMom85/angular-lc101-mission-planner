@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew.component.css']
 })
 export class CrewComponent implements OnInit {
+  memberBeingEdited: object = null;
+  sameName: boolean = false;
 
   crew: object[] = [
-    {name: "Eileen Collins", firstMission: false},
-    {name: "Mae Jemison", firstMission: false},
-    {name: "Ellen Ochoa", firstMission: true}
+    { name: "Eileen Collins", firstMission: false },
+    { name: "Mae Jemison", firstMission: false },
+    { name: "Ellen Ochoa", firstMission: true }
   ];
-  memberBeingEdited: object = null;
 
   constructor() { }
 
@@ -20,7 +21,16 @@ export class CrewComponent implements OnInit {
   }
 
   add(memberName: string, isFirst: boolean) {
-    this.crew.push({name: memberName, firstMission: isFirst});
+    for (let i = 0; i < this.crew.length; i++) {
+      if (this.crew[i]['name'] === memberName) {
+        this.sameName = true;
+      }
+      if (!this.sameName) {
+        this.crew.push({ name: memberName, firstMission: isFirst });
+        // this.sameName = false;
+      }
+      
+    }
   }
   remove(member: object) {
     let index = this.crew.indexOf(member);
@@ -28,12 +38,11 @@ export class CrewComponent implements OnInit {
   }
   edit(member: object) {
     this.memberBeingEdited = member;
-    
- }
- save(name: string, member: object) {
-  member['name'] = name;
-  this.memberBeingEdited = null;
-  console.log(name)
-}
-  
+
+  }
+  save(name: string, member: object) {
+    member['name'] = name;
+    this.memberBeingEdited = null;
+  }
+
 }
