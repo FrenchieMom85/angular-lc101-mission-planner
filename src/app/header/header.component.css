@@ -2,12 +2,21 @@
     cursor: pointer;
 }
 
-h2 {
+div {
     text-align: center;
-    color: brown;
+    color: oldlace;
+    font-size: 30px;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
+    font-size: 75px;
+    padding-top: 20px;
+    color: oldlace;
+}
+
+html {
+    background-color: black;
 }

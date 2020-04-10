@@ -2,4 +2,11 @@
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
+    background-image: url(https://www.scitecheuropa.eu/wp-content/uploads/2019/07/ClaudioVentrella.jpg);
+}
+
+div {
+    background-image: url(https://www.scitecheuropa.eu/wp-content/uploads/2019/07/ClaudioVentrella.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
