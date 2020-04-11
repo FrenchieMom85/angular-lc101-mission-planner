@@ -13,4 +13,8 @@
             {{astronaut.name}}</li>
     </ol>
     <img *ngIf="selected" [src]="selected.photo" />
+    <ul *ngIf="selected">
+        <li>{{selected.age}}</li>
+        <li>{{selected.experience}}</li>
+    </ul>
 </div>

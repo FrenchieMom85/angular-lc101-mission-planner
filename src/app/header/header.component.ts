@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   rocketName: string = "ICAN";
   editingRocket: boolean = false;
   editingMission: boolean = false;
-  
+
   constructor() { }
 
   ngOnInit() {
